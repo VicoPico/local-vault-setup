@@ -1,0 +1,18 @@
+# Vault data directory
+vault/vault-data/
+
+# Vault unseal keys and tokens
+*.token
+*.key
+
+# Environment files with secrets
+vault/*.env
+
+# Temporary, backup, and log files
+*.bak
+*.tmp
+*.swp
+*.log
+
+# Ignore sensitive HCL files
+vault/*.hcl
