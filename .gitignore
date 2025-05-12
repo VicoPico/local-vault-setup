@@ -1,5 +1,6 @@
-# Vault data directory
+# Vault data directory (auto-generated)
 vault/vault-data/
+data/
 
 # Vault unseal keys and tokens
 *.token
@@ -7,12 +8,23 @@ vault/vault-data/
 
 # Environment files with secrets
 vault/*.env
+.env
 
 # Temporary, backup, and log files
 *.bak
 *.tmp
 *.swp
 *.log
+vault-backup.tar.gz
+*.snap  # Vault snapshots
 
-# Ignore sensitive HCL files
-vault/*.hcl
+# Ignore sensitive HCL files (adjust as needed)
+vault/secrets.hcl
+
+# TLS certificates and private keys
+*.crt
+*.key
+
+# OS/IDE clutter
+.DS_Store
+.vscode/
